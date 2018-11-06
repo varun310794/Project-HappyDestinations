@@ -1,0 +1,30 @@
+.thumbnail img{
+  width:100%;
+}
+
+#delete-form{
+    display:inline;
+}
+
+.specific .form-control{
+  width:30%;
+}
+
+
+
+body { 
+  background: url("https://s.tmimgcdn.com/blog/wp-content/uploads/2017/06/books.jpg?x54449") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.homeButton{
+  margin:20%;
+
+}
+
+#colorrr{
+  color:white;
+}

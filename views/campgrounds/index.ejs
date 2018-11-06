@@ -1,0 +1,29 @@
+<% include ../partials/header.ejs %>
+<div class="container">
+    <div class="jumbotron">
+        <div class="container">
+            <h3><b>Welcome to KNOW YOUR DESTINATION.</br> The collection of most exciting Destinations in the US.</b></h3>
+            <p>Here, you can find out everything that you wanted to know about your upcoming holiday destination. You can SIGN UP and read other user reviews. You can also interact with them in our comments section.</p>
+            <a class="btn btn-large btn-primary" href="/campgrounds/new">Add new Destinations</a>    
+        </div>    
+    </div>
+    <div class=row>
+         
+    </div>   
+    
+    <div class="row text-center" style="display:flex; flex-wrap:wrap;">
+        <%for(i=0;i<grounds.length;i++){%>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <img src="<%= grounds[i].img %>">
+                <div class="caption">
+                    <h5><b><%=grounds[i].name%></b></h5>
+                    <a href="/campgrounds/<%= grounds[i]._id %>" class="btn btn-xs btn-primary">More info</a>
+                </div>    
+             </div>
+        </div>           
+        <%}%>
+         
+    </div>
+</div>
+<% include ../partials/footer.ejs %>

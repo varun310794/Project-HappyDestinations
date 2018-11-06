@@ -1,0 +1,12 @@
+<% include ../partials/header.ejs %>
+<div class="container newContainer" >
+    <h1>Create New Destination</h1>
+    <form action="/campgrounds" method="post" >
+            <input type="text" style="width:40%; padding-left:5px;" class="form-control" name="name" placeholder="Destination name"></br>
+            <input type="text" style="width:40%; padding-left:5px;" class="form-control" name="image" placeholder="Destination Image URL"></br>
+            <input type="text" style="width:40%; padding-left:5px;" class="form-control" name="description" placeholder="Destination Description"></br>
+            <button class="btn btn-large btn-primary">Submit</button></br>
+            <a href="/campgrounds" style="color:white; margin:0 auto;">GoBack</a>
+    </form>
+</div>
+<% include ../partials/footer.ejs %>

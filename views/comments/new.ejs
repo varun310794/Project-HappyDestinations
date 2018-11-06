@@ -1,0 +1,9 @@
+<% include ../partials/header.ejs %>
+<div class="container" style="text-align:center; ">
+    <h1>Add New Comments on <%= foundCamp.name %></h1>
+    <form action="/campgrounds/<%= foundCamp._id %>/comment" method="post">
+            <input type="text" style="width:40%; padding-left:5px;" class="form control" name="comment[text]" placeholder="Type a comment"></br></br>
+            <button class="btn btn-large btn-primary">Submit</button></br>
+    </form>
+</div>
+<% include ../partials/footer.ejs %>
