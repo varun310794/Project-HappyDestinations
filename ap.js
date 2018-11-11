@@ -16,9 +16,9 @@ app.use(methodOverride("_method"));
 app.use(flash());
 
 
-//mongoose.connect('mongodb://varun:database1@ds155293.mlab.com:55293/knowyourdestination');
+mongoose.connect('mongodb://varun:database1@ds155293.mlab.com:55293/knowyourdestination');
 
-mongoose.connect('mongodb://localhost:27017/yelpCamp', { useNewUrlParser: true });
+//mongoose.connect('mongodb://localhost:27017/yelpCamp', { useNewUrlParser: true });
 //--------------------------------------------------------------------------------------------------
 
 //seedDB();
